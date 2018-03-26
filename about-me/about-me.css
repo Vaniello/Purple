@@ -1,0 +1,128 @@
+.about {
+    margin-top: 10%;
+}
+.section__title {
+    text-transform: uppercase;
+    color: #9b59b6;
+    font-family: "MyriadPro";
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 5%;
+}
+.text {
+    color: #95a5a6;
+    font-family: "MyriadPro";
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: center;
+}
+.section__text {
+    width: 80%;
+    min-width: 280px;
+}
+.skill {
+    margin: 10% auto 0;
+    width: 70%;
+    min-width: 200px;   
+    text-align: center;
+}
+.skills__title {
+    color: #9b59b6;
+    font-family: "MyriadPro";
+    font-weight: bold;
+    font-size: 20px;
+    margin: 6%;
+}
+.skills__text {
+    font-size: 15px;
+    text-align: justify;
+}
+ 
+@media screen and (min-width:400px) {
+    .text {
+        font-size: 17px;
+    }
+    .skills__text {
+        font-size: 15px;
+    }
+    .skills_title{
+        font-size: 22px;
+    }
+    .section__title {
+        font-size: 30px;
+    }
+}
+@media screen and (min-width:620px) {
+    .section__title {
+        font-size: 34px;
+    }
+    .text {
+        font-size: 20px;
+    }
+    .skills__text {
+        font-size: 18px;
+    }
+    .skills__title {
+        font-size: 26px;
+    }
+}
+@media screen and (min-width: 800px) {
+    .about {
+        margin-top: 7%;
+    }
+    .section__title {
+        margin-bottom: 3%;
+        font-size: 36px;
+    }
+    .skills {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row;
+    }
+    .text {
+        font-size: 18px;
+    }
+    .skill {
+        margin-top: 5%;
+        width: 30%;
+        max-width: 200px;
+    }
+    .skills__text {
+        font-size: 15px;
+    }
+    .skills__title{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:1300px){
+    .skill {
+        min-width:250px;
+        max-width: 350px;
+    }
+    .skills__text {
+        font-size: 16px;
+    }
+    .skills__title {
+        font-size: 22px;
+    }
+}
+@media screen and (min-width:1950px){
+    .text {
+        font-size: 24px;
+    }
+    .section__title {
+        font-size: 42px;
+    }
+    .skill {
+        max-width: 400px;
+    }
+    .skills__text {
+        font-size: 20px;
+    }
+    .skills__title {
+        font-size: 26px;
+    }
+}

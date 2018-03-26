@@ -1,0 +1,30 @@
+
+@font-face {
+  font-family: "Quicksand";
+  src: url(Quicksand-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Rokkitt";
+  src: url(Rokkitt-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  src: url(MyriadPro-Cond.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  font-weight: bold;
+  src: url(MyriadPro-Bold.otf);
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  font-weight: 300;
+  src: url(MyriadPro-Regular.otf);
+}

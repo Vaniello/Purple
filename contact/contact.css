@@ -1,0 +1,36 @@
+.contact__title {
+    font-size: 2rem;
+    color: #9b59b6;
+    font-family: "Rokkitt";
+    font-weight: normal;
+    margin-bottom: 2.8%;
+}
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin-bottom: 6%;
+}
+.form__item {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #e4e8e8;
+    color: #4d4d4d;
+    margin: 2.2% 0;
+    font-family: "Rokkitt";
+    font-weight: normal;
+    padding: 2%;
+    font-size: 1rem;
+}
+
+.form__item [input-placeholder] {
+    color: #cecece;
+}
+@media screen and (min-width:1300px) {
+    .form__input {
+        width: 43%;
+    }
+}

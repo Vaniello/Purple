@@ -1,0 +1,174 @@
+.line {
+    margin: 5% auto;
+    width:100%;
+    border: none;
+    background-color: #e4e8e8;
+    height: 1px;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery__item:first-child {
+    background-image: url(image1.jpg);
+}
+.gallery__item:nth-child(2) {
+    background-image: url(image2.jpg);
+}
+.gallery__item:nth-child(3) {
+    background-image: url(image3.jpg);
+}
+.gallery__item:last-child {
+    background-image: url(image4.jpg);
+}
+.gallery__item {
+    width: 80%;
+    margin: 25px;
+    max-width: 600px;
+    max-height: 450px;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 5;
+}
+.gallery-ratio-inner {
+    position: relative;
+    height: 0;
+}
+.gallery-ratio-4-3 {
+    padding-top: 75%;
+}
+.gallery__item::before {
+    content: '';
+    width:100%;
+    height: 100%;
+    background: rgb(224, 183, 181);
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 6;    
+}
+.gallery__item:hover::before {
+    content: '';
+    opacity: 0;    
+    transition: all 0.8s;
+}
+.photo__info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.gallery__item:hover .photo__info{
+    opacity: 1;    
+    transition: all 1.2s;
+}
+.photo__titles {
+    box-sizing: border-box;
+    box-shadow: 0 -5px rgba(195, 155, 211, 0.5);
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: left;
+    background-color: #9b59b6;    
+    z-index: 6;
+    padding-left: 5%;
+}
+.photo__title {
+    font-size: 1rem;
+    font-family: "Rokkitt";
+    font-weight: normal;
+    color: #ffffff;
+    z-index: 5;
+    margin-bottom: 2%;
+}
+.photo__text {
+    font-size: 0.5rem;
+    font-family: "MyriadPro";
+    font-weight: 300;
+    color: #6b3f7d;
+}
+.photo__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 6.25%;
+    right: 6.25%;
+    width: 10%;
+    height: 13.3%;
+    background-color: #9b59b6;
+    box-shadow: 0 0 0 6px rgba(195, 155, 211, 0.5);
+}
+.fa-search {
+    color: #fff;
+    font-size: 0.8rem;
+}
+.portpholio__button { 
+    margin-top: 2%;   
+    width: 15%;
+    min-width: 150px;
+    background-color: #9b59b6;
+    text-align: center;
+    padding: 1% 0;
+}
+.portpholio__link {
+    color: #fff;
+    background-color: #9b59b6;
+    font-size: 0.9rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Rokkitt";
+    font-weight: normal;
+}
+
+@media screen and (min-width:540px) {
+    html {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:620px) {
+    html {
+        font-size: 22px;
+    }
+}
+@media screen and (min-width:800px) {
+    html {
+        font-size: 23px;
+    }
+}
+@media screen and (min-width:1300px) {
+    html {
+        font-size: 27px;
+    }
+    .line {
+        height: 1.5px;
+    }
+    .photo__search {
+        box-shadow: 0 0 0 9px rgba(195, 155, 211, 0.5);
+    }
+    .photo__titles {
+        box-shadow: 0 -9px rgba(195, 155, 211, 0.5);
+    }
+
+}
+@media screen and (min-width:1950px) {
+    html {
+        font-size: 31px;
+    }
+    .gallery__item {
+        max-width: 800px;
+        max-height: 600px;
+    }
+}

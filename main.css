@@ -1,0 +1,7 @@
+@import url(_base/reset.css);
+@import url(_base/fonts.css);
+@import url(header/header.css);
+@import url(about-me/about-me.css);
+@import url(portpholio/portpholio.css);
+@import url(contact/contact.css);
+@import url(footer/footer.css);
